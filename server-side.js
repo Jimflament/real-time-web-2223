@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 });
 
 io.on('connection', (socket) => {
-    console.log('a user connected');
+    console.log('a user connected', socket.id);
     io.emit('user connected', 'A new user connected');
     socket.on('disconnect', () => {
       console.log('user disconnected');

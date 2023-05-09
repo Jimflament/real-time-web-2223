@@ -4,12 +4,14 @@
   "description": "",
   "main": "server-side.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server-side.js"
   },
   "author": "Jim Flament",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
+    "routie": "^0.0.1",
     "socket.io": "^4.6.1"
   },
   "devDependencies": {
